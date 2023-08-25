@@ -11,7 +11,7 @@ export const Container = styled.section`
   width: 1024px;
   max-width: 95%;
   height: 90vh;
-  background-color: ${(props) => props.theme.colors.white[0]};
+  background-color: ${(props) => props.theme.colors.white[1]};
   border-radius: 5px;
   overflow: hidden;
 `;
