@@ -16,3 +16,8 @@ export const Container = styled.section`
   overflow: hidden;
   position: relative;
 `;
+
+export const Body = styled.section`
+  padding: 20px;
+  height: calc(100% - 195px);
+`;
