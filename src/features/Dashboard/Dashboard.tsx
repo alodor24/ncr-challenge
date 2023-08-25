@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 
 const Dashboard = () => {
   return (
-    <Layout>
+    <Layout title="Selecciona la Cuenta a Consultar">
       <div>Dashboard</div>
     </Layout>
   );

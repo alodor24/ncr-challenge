@@ -21,3 +21,15 @@ export const Body = styled.section`
   padding: 20px;
   height: calc(100% - 195px);
 `;
+
+export const Text = styled.p`
+  text-align: center;
+  color: ${(props) => props.theme.colors.grey[2]};
+`;
+
+export const Title = styled.h1`
+  text-align: center;
+  color: ${(props) => props.theme.colors.grey[2]};
+  font-size: 2rem;
+  margin: 15px 0;
+`;
