@@ -14,4 +14,5 @@ export const Container = styled.section`
   background-color: ${(props) => props.theme.colors.white[1]};
   border-radius: 5px;
   overflow: hidden;
+  position: relative;
 `;
