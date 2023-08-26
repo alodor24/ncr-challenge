@@ -12,7 +12,10 @@ const Router = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path={RoutesEnum.ROOT} Component={Dashboard} />
-          <Route path={RoutesEnum.BALANCE} Component={Balance} />
+          <Route
+            path={`${RoutesEnum.BALANCE}/:balanceId`}
+            Component={Balance}
+          />
         </Routes>
       </Suspense>
     </BrowserRouter>
