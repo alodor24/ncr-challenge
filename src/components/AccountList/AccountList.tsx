@@ -46,7 +46,11 @@ const AccountList: React.FC<Props> = ({ data }) => {
     <SC.Wrapper>
       {/* Si la página visible no es la primera, entonces debe mostrar el botón */}
       {currentPage > 1 && (
-        <button onClick={handlePreviousPage}>{"<< Opciones anteriores"}</button>
+        <Button
+          action={handlePreviousPage}
+          text="<< Opciones anteriores"
+          isBasic
+        />
       )}
       {/*Recorrer el array de resultados dinámicamente estableciendo el rango en cada página visible*/}
       {data.slice(startIndex, endIndex).map((item) => (
@@ -66,7 +70,7 @@ const AccountList: React.FC<Props> = ({ data }) => {
       ))}
       {/* Si la página visible no es la última, entonces debe mostrar el botón */}
       {currentPage < totalPages && (
-        <button onClick={handleNextPage}>{"Más opciones >>"}</button>
+        <Button action={handleNextPage} text="Más opciones >>" isBasic />
       )}
     </SC.Wrapper>
   );
