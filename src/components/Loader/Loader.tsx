@@ -1,8 +1,12 @@
 import * as SC from "./Loader.styles";
 
-const Loader = () => {
+type Props = {
+  alignLoader?: boolean;
+};
+
+const Loader: React.FC<Props> = ({ alignLoader = false }) => {
   return (
-    <SC.Wrapper>
+    <SC.Wrapper alignLoader={alignLoader}>
       <SC.Spinner />
     </SC.Wrapper>
   );
