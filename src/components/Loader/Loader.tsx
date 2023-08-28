@@ -6,7 +6,7 @@ type Props = {
 
 const Loader: React.FC<Props> = ({ alignLoader = false }) => {
   return (
-    <SC.Wrapper alignLoader={alignLoader}>
+    <SC.Wrapper $alignLoader={alignLoader}>
       <SC.Spinner />
     </SC.Wrapper>
   );
