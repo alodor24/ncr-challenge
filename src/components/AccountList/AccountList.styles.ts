@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   max-height: 60%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-rows: 1fr 1fr;
   gap: 2rem;
 `;
 

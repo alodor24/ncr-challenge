@@ -47,7 +47,10 @@ const Balance = () => {
                     : TypeAccountEnum.CCD
                   : "Tipo de cuenta no reconocido"}
               </SC.Text>
-              <SC.Text>Número de cuenta: {filteredData[0].n}</SC.Text>
+              <SC.Text>
+                Número de cuenta:{" "}
+                {filteredData[0].n.trim() !== "" ? filteredData[0].n : "-"}
+              </SC.Text>
             </SC.Container>
           )}
         </>
