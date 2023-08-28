@@ -21,7 +21,7 @@ const AccountList: React.FC<Props> = ({ data }) => {
       {data.slice(0, 6).map((item) => (
         <SC.ContainerButton key={`${item.n}${item.t}`}>
           <Button
-            linkTo={`${RoutesEnum.BALANCE}/${item.n}`}
+            linkTo={`${RoutesEnum.BALANCE}/${item.n}${item.t}`}
             action={handleToggleButton}
           >
             <p>
