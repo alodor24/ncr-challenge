@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 
 const Dashboard = lazy(() => import("../features/Dashboard"));
 const Balance = lazy(() => import("../features/Balance"));
+const NotFound = lazy(() => import("../features/NotFound"));
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
             path={`${RoutesEnum.BALANCE}/:balanceId`}
             Component={Balance}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
