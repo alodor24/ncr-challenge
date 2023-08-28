@@ -4,6 +4,7 @@ import Loader from "../../components/Loader";
 import useGetData from "../../hooks/useGetData";
 import * as SC from "./Balance.styles";
 import { TypeAccountEnum } from "../../constants";
+import Error from "../../components/Error";
 
 const Balance = () => {
   // Obtener datos de la API desde el hook
@@ -26,7 +27,7 @@ const Balance = () => {
       ) : (
         <>
           {error || filteredData.length < 1 ? (
-            <div>Error</div>
+            <Error />
           ) : (
             <SC.Container>
               <SC.Text>

@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import AccountList from "../../components/AccountList";
 import useGetData from "../../hooks/useGetData";
 import Loader from "../../components/Loader";
+import Error from "../../components/Error";
 
 const Dashboard = () => {
   const { data: accountData, loading, error } = useGetData();
@@ -11,7 +12,7 @@ const Dashboard = () => {
       {loading ? (
         <Loader alignLoader={true} />
       ) : (
-        <>{error ? <div>Error</div> : <AccountList data={accountData} />}</>
+        <>{error ? <Error /> : <AccountList data={accountData} />}</>
       )}
     </Layout>
   );

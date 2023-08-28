@@ -1,7 +1,7 @@
 import { keyframes, styled } from "styled-components";
 
 export const Wrapper = styled.div<{ $alignLoader?: boolean }>`
-  height: ${(props) => (props.$alignLoader ? "100%" : "100vh")};
+  height: ${(props) => (props.$alignLoader ? "calc(100% - 100px)" : "100vh")};
   display: flex;
   justify-content: center;
   align-items: center;
