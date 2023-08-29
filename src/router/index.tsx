@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RoutesEnum } from "../constants";
 import Loader from "../components/Loader";
 
+// Carga de componentes visuales de forma perezosa
 const Dashboard = lazy(() => import("../features/Dashboard"));
 const Balance = lazy(() => import("../features/Balance"));
 const NotFound = lazy(() => import("../features/NotFound"));

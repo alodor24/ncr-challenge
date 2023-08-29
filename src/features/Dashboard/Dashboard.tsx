@@ -5,6 +5,7 @@ import Loader from "../../components/Loader";
 import Error from "../../components/Error";
 
 const Dashboard = () => {
+  // Obtener datos de cuenta desde el hook
   const { data: accountData, loading, error } = useGetData();
 
   return (

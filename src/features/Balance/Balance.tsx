@@ -31,10 +31,12 @@ const Balance = () => {
           ) : (
             <SC.Container>
               <SC.Text>
+                {/* Si el saldo en cuenta viene seteado con guiones, se realiza un saneado */}
                 Saldo de la cuenta: {filteredData[0].saldo.replace(/-/g, "")}
               </SC.Text>
               <SC.Text>
                 Tipo de cuenta:{" "}
+                {/* Detectar el tipo de moneda y cuenta a mostrar */}
                 {filteredData[0].moneda === TypeAccountEnum.SIMBOLO_PESOS
                   ? filteredData[0].tipo_letras.toUpperCase() ===
                     TypeAccountEnum.CA
@@ -49,6 +51,7 @@ const Balance = () => {
               </SC.Text>
               <SC.Text>
                 Número de cuenta:{" "}
+                {/* En caso de no existir el número de cuenta, el valor es reemplazado por un guión */}
                 {filteredData[0].n.trim() !== "" ? filteredData[0].n : "-"}
               </SC.Text>
             </SC.Container>

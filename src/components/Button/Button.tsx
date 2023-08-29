@@ -17,6 +17,7 @@ const Button: React.FC<Props> = ({
 }) => {
   return (
     <>
+      {/* Condicional usado para determinar que tipo de button debe ser usado en la UI */}
       {isBasic ? (
         <SC.Button onClick={action}>{text}</SC.Button>
       ) : (
