@@ -1,27 +1,40 @@
-# React + TypeScript + Vite
+# NCR Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prueba técnica desarrollada con las siguientes tecnologías:
 
-Currently, two official plugins are available:
+- `React`
+- `TypeScript`
+- `Styled-Components`
+- `Redux`
+- `React Router Dom`
+- `Vite`
+- `Jest`
+- `React Testing Library`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Desarrollado por:
 
-## Expanding the ESLint configuration
+José Alejandro Méndez Sánchez
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Pasos para desplegar proyecto en local:
 
-- Configure the top-level `parserOptions` property like this:
+#### Se debe clonar el proyecto desde el repositorio de GitHub
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Crear archivo .env en la raíz el proyecto para configurar las variables de entorno
+2. Agregar lo siguiente:
+   - `VITE_BASE_URL=https://api.npoint.io`
+   - `VITE_ENDPOINT=97d89162575a9d816661`
+3. Guardar cambios
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### A continuación
+
+1. En la trminal del proyecto debemos ejecutar los siguientes comandos:
+
+- `npm i`
+- `npm run dev`
+
+2. Por defecto el proyecto puede ser visible en el navegador de forma local con el siguiente link: `http://localhost:5173/`
+3. Opcional, si quieres correr los tests debes ejecutar el siguiente comando `npm run test`
+
+#### Demo
+
+Ver proyecto deployado haciendo click [acá](https://ncr-challenge.vercel.app)
