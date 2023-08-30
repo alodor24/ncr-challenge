@@ -19,7 +19,7 @@ José Alejandro Méndez Sánchez
 
 #### Se debe clonar el proyecto desde el repositorio de GitHub
 
-1. Crear archivo .env en la raíz el proyecto para configurar las variables de entorno
+1. Crear archivo `.env` en la raíz el proyecto para configurar las variables de entorno
 2. Agregar lo siguiente:
    - `VITE_BASE_URL=https://api.npoint.io`
    - `VITE_ENDPOINT=97d89162575a9d816661`
@@ -37,4 +37,4 @@ José Alejandro Méndez Sánchez
 
 #### Demo
 
-Ver proyecto deployado haciendo click [acá](https://ncr-challenge.vercel.app)
+Ver proyecto deployado haciendo click [acá](https://ncr_challenge.vercel.app)
