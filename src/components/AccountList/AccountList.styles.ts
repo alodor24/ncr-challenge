@@ -5,9 +5,21 @@ export const Wrapper = styled.div`
   height: 300px;
   max-height: 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
+  overflow: auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 `;
 
 export const ContainerButton = styled.div`

@@ -24,4 +24,5 @@ export const Button = styled.button`
   ${CommomStyles}
   border: none;
   font-size: 16px;
+  min-height: 3.5rem;
 `;
